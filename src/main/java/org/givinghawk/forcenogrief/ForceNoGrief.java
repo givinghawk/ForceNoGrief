@@ -26,33 +26,37 @@ public final class ForceNoGrief extends JavaPlugin implements Listener {
     @EventHandler
     public void onBlockBreak(BlockBreakEvent event) {
         // Kick the player when they break a block
-        event.getPlayer().kickPlayer("Griefing");
+        Player player = event.getPlayer();
+        player.kickPlayer("Griefing");
     }
 
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent event) {
         // Kick the player when they place a block
-        event.getPlayer().kickPlayer("Griefing");
+        Player player = event.getPlayer();
+        player.kickPlayer("Griefing");
     }
 
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event) {
         // Kick the player when they kill a mob
-        if (event.getEntity().getKiller() != null) {
-            event.getEntity().getKiller().kickPlayer("Griefing");
+        Player player = event.getEntity().getKiller();
+        if (player != null) {
+            player.kickPlayer("Griefing");
         }
     }
 
     @EventHandler
     public void onInventoryOpen(InventoryOpenEvent event) {
         // Kick the player when they open an inventory
-        event.getPlayer().kickPlayer("Griefing");
+        Player player = (Player) event.getPlayer();
+        player.kickPlayer("Griefing");
     }
 
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         // Kick the player when they interact with a block
-        event.getPlayer().kickPlayer("Griefing");
+        Player player = event.getPlayer();
+        player.kickPlayer("Griefing");
     }
-
 }
