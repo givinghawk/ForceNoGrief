@@ -1,0 +1,4 @@
+name: ForceNoGrief
+version: '${project.version}'
+main: org.givinghawk.forcenogrief.ForceNoGrief
+api-version: 1.15
