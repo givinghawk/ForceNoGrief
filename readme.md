@@ -1,6 +1,6 @@
 # ForceNoGrief
 
-![Plugin Version](https://img.shields.io/badge/version-0.1-blue.svg)
+![Plugin Version](https://img.shields.io/badge/version-0.2-blue.svg)
 ![Lines of code](https://img.shields.io/tokei/lines/github/givinghawk/ForceNoGrief)
 ![Java Version](https://img.shields.io/badge/java-1.8-orange.svg)
 ![Spigot Version](https://img.shields.io/badge/spigot-1.15-brightgreen.svg)
